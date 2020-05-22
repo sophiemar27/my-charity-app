@@ -5,6 +5,7 @@ import {
   Route } 
   from 'react-router-dom'
 import AllProjects from './components/AllProjects.js'
+import CreateProject from './components/CreateProject.js'
 
 
 import './App.css';
@@ -13,12 +14,14 @@ class App extends Component {
   render () {
     return (
       <div>
-      <h1>My Third Project</h1>
+      <h1></h1>
       <Router>
         <div>
           <Switch>
 
             <Route exact path="/" component={AllProjects}/>
+            <Route exact path="/admin" component={CreateProject}/>
+
            
           </Switch>
         </div>
