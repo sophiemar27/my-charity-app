@@ -32,15 +32,18 @@ export default class AllProjects extends Component {
 
     render() {
         return (
-            <div>
+            <div class='all-projects'>
                 {this.state.AllProjects.map((projects, index) => {
                     return (
-                        <div key={`jd320kd-${index}`}>
-                            {/* <img src={image}/> */}
-                            <Link to={`/projects/${projects._id}`}>
-                                <div>{projects.name}</div>
-                            </Link>
+                        <div  key={`jd320kd-${index}`}>
+                            
+                            <img src={projects.image}/>
+                            <div>{projects.name}</div>
+                            
                             <div>{projects.location}</div>
+                            <Link to={`/projects/${projects._id}`}>
+                                <div>Click here for more info...</div>
+                            </Link>
                         </div>
                     )
                 })}

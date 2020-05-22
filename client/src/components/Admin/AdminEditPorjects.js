@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-export default class AdminDeleteProject extends Component {
+export default class AdminEditProject extends Component {
     state = {
              image: '',
              name: '',
@@ -23,19 +24,22 @@ export default class AdminDeleteProject extends Component {
 
     onDeleteProject = async (projectId) => {
         await axios.delete(`/api/projects/${projectId}`)
-        this.getAllProjects()
+        
     }
 
+    
+
     render() {
+        const projectId = this.props.match.params.projectId
         return (
             <div>
                 <h1>Admin Single Page</h1>
-                {/* <div><img src={this.state.image}/></div> */}
+                <div><img src={this.state.image}/></div>
                 
                 <div>{this.state.name}</div>
                 <div>{this.state.location}</div>
                 <div>{this.state.description}</div>
-                <button>Delete</button> 
+                {/* <button onClick={() => this.onDeleteProject(projectId)}>Delete</button>  */}
             </div>
         )
     }

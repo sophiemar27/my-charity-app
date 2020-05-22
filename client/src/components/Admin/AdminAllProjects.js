@@ -40,17 +40,20 @@ export default class AdminAllProjects extends Component {
 
     render() {
         return (
-            <div>
+            <div class='all-projects'>
                 {this.state.AllProjects.map((projects, index) => {
                     return (
                         <div key={`jd320kd-${index}`}>
-                            {/* <img src={image}/> */}
-                            <Link to={`/projects/${projects._id}`}>
-                                <div>{projects.name}</div>
+                            <img src={projects.image}/>
+                            <Link to={`/admin/projects/${projects._id}`}>
+                            <div>{projects.name}</div>
                             </Link>
                             <div>{projects.location}</div>
-                            <button onClick={() => this.onDeleteProject(projects._id)}>Delete</button>
+                            <button onClick={() => this.onDeleteProject(projects._id)}>Delete</button> 
+                            
+                            <button>Edit</button>
 
+                            
                         </div>
                     )
                 })}

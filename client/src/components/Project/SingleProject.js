@@ -22,15 +22,19 @@ export default class SingleProject extends Component {
     }
 
     render() {
+        
         return (
-            <div>
-                <h1>Single Page</h1>
-                {/* <div><img src={this.state.image}/></div> */}
-                
-                <div>{this.state.name}</div>
-                <div>{this.state.location}</div>
-                <div>{this.state.description}</div>
+            <div class='single-project'>
+                <div>
+                    <h1>Single Page</h1>
+                    <div><img class='single-img' src={this.state.image}/></div>
+                    
+                    <div>{this.state.name}</div>
+                    <div>{this.state.location}</div>
+                    <div>{this.state.description}</div>
+                </div>
             </div>
         )
+      
     }
 }
