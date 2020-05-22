@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
      
-export default class AllProjects extends Component {
+export default class AdminAllProjects extends Component {
     state = {
         projects: {
              image: '',
@@ -28,7 +28,15 @@ export default class AllProjects extends Component {
             console.log('Failed to get all project')
             console.log(error)
         }
+
     }
+
+    onDeleteProject = async (projectId) => {
+        await axios.delete(`/api/projects/${projectId}`)
+        this.getAllProjects()
+    }
+
+    
 
     render() {
         return (
@@ -41,6 +49,8 @@ export default class AllProjects extends Component {
                                 <div>{projects.name}</div>
                             </Link>
                             <div>{projects.location}</div>
+                            <button onClick={() => this.onDeleteProject(projects._id)}>Delete</button>
+
                         </div>
                     )
                 })}

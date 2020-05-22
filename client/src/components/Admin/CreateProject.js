@@ -14,19 +14,24 @@ export default class CreateProject extends Component {
     }
 
     componentDidMount() {
-        this.getAllProjects()
+        //this.getAllProjects()
     }
  
-    getAllProjects = async () => {
-        try {
-            const res = await axios.get('/api/projects')
-            const newState = { ...this.state }
-            newState.newProject = res.data
-            this.setState(newState)
-        } catch (error) {
-            console.log('Failed to get all project')
-            console.log(error)
-        }
+    // getAllProjects = async () => {
+    //     try {
+    //         const res = await axios.get('/api/projects')
+    //         const newState = { ...this.state }
+    //         newState.newProject = res.data
+    //         this.setState(newState)
+    //     } catch (error) {
+    //         console.log('failed')
+    //         console.log(error)
+    //     }
+    // }
+
+    onDeleteProject = async (projectId) => {
+        await axios.delete(`/api/projects/${projectId}`)
+        this.getAllProjects()
     }
 
     onChangeProject = (evt) => {
@@ -39,7 +44,8 @@ export default class CreateProject extends Component {
         evt.preventDefault()
         try {
             await axios.post('/api/projects', this.state.newProject)
-             this.getAllBooks()
+            // this.getAllBooks()
+             console.log(this.state.newProject)
         } catch (error) {
             console.log('Failed to create project')
             console.log(error)
@@ -95,7 +101,7 @@ export default class CreateProject extends Component {
                     </div>
                     <input type="submit" value="Add Project" />
                 </form>
-
+              
             </div>
         )
     }

@@ -4,8 +4,14 @@ import {
   Switch, 
   Route } 
   from 'react-router-dom'
+  //ADMIN
+import CreateProject from './components/Admin/CreateProject.js'
+import AdminAllProjects from './components/Admin/AdminAllProjects.js'
+import AdminDeleteProject from './components/Admin/AdminDelete.js'
+  //USERS
 import AllProjects from './components/AllProjects.js'
-import CreateProject from './components/CreateProject.js'
+import SingleProject from './components/SingleProject.js'
+
 
 
 import './App.css';
@@ -20,7 +26,11 @@ class App extends Component {
           <Switch>
 
             <Route exact path="/" component={AllProjects}/>
+            <Route exact path="/projects/:projectId" component={SingleProject}/>
             <Route exact path="/admin" component={CreateProject}/>
+            <Route exact path="/admin/projects" component={AdminAllProjects}/>
+            <Route exact path="/admin/projects/projectId" component={AdminDeleteProject}/>
+
 
            
           </Switch>
