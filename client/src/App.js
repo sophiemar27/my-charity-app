@@ -7,10 +7,10 @@ import {
   //ADMIN
 import CreateProject from './components/Admin/CreateProject.js'
 import AdminAllProjects from './components/Admin/AdminAllProjects.js'
-import AdminDeleteProject from './components/Admin/AdminDelete.js'
+import AdminEditProject from './components/Admin/AdminEditPorjects.js'
   //USERS
-import AllProjects from './components/AllProjects.js'
-import SingleProject from './components/SingleProject.js'
+import AllProjects from './components/Project/AllProjects.js'
+import SingleProject from './components/Project/SingleProject.js'
 
 
 
@@ -29,7 +29,7 @@ class App extends Component {
             <Route exact path="/projects/:projectId" component={SingleProject}/>
             <Route exact path="/admin" component={CreateProject}/>
             <Route exact path="/admin/projects" component={AdminAllProjects}/>
-            <Route exact path="/admin/projects/projectId" component={AdminDeleteProject}/>
+            <Route exact path="/admin/projects/:projectId" component={AdminEditProject}/>
 
 
            
