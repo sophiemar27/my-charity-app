@@ -14,6 +14,8 @@ import AdminSingleOrganization from './components/Admin/AdminSingleOrg.js'
   //USERS
 import AllProjects from './components/Project/AllProjects.js'
 import SingleProject from './components/Project/SingleProject.js'
+import AllOrganizations from './components/Organization/AllOrganizations.js'
+import SingleOrganization from './components/Organization/SingleOrg.js'
 
 
 
@@ -30,6 +32,8 @@ class App extends Component {
 
             <Route exact path="/" component={AllProjects}/>
             <Route exact path="/projects/:projectId" component={SingleProject}/>
+            <Route exact path="/all_orgs" component={AllOrganizations}/>
+            <Route exact path="/organizations/:organizationId" component={SingleOrganization}/>
             
             <Route exact path="/admin" component={CreateProject}/>
             <Route exact path="/admin/projects" component={AdminAllProjects}/>
