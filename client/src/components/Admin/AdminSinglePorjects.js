@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-export default class AdminEditProject extends Component {
+export default class AdminSingleProject extends Component {
     state = {
              image: '',
              name: '',
@@ -32,14 +32,16 @@ export default class AdminEditProject extends Component {
     render() {
         const projectId = this.props.match.params.projectId
         return (
-            <div>
-                <h1>Admin Single Page</h1>
-                <div><img src={this.state.image}/></div>
-                
-                <div>{this.state.name}</div>
-                <div>{this.state.location}</div>
-                <div>{this.state.description}</div>
-                {/* <button onClick={() => this.onDeleteProject(projectId)}>Delete</button>  */}
+            <div class='single-project'>
+                <div>
+                    <h1>Admin Single project Page</h1>
+                    <div><img  class='single-img' src={this.state.image}/></div>
+                    
+                    <div>{this.state.name}</div>
+                    <div>{this.state.location}</div>
+                    <div>{this.state.description}</div>
+                    {/* <button onClick={() => this.onDeleteProject(projectId)}>Delete</button>  */}
+                </div>
             </div>
         )
     }
