@@ -25,7 +25,7 @@ class App extends Component {
   render () {
     return (
       <div>
-      <h1></h1>
+      <img className='banner' src={'https://f0.pngfuel.com/png/346/468/volunteering-international-volunteer-day-labor-organization-person-others-png-clip-art.png'}/>
       <Router>
         <div>
           <Switch>

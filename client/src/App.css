@@ -1,5 +1,5 @@
 img {
-  width: 190px;
+  width: 200px;
   height: 250px;
 }
 
@@ -8,6 +8,7 @@ img {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap ;
+  
 }
 
 .single-project {
@@ -19,4 +20,10 @@ img {
 .single-img {
   height: 400px;
   width: 350px;
+}
+
+.banner {
+  width: 1500px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
