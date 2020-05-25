@@ -13,6 +13,7 @@ import AdminAllOrganizations from './components/Admin/AdminAllOrg.js'
 import AdminSingleOrganization from './components/Admin/AdminSingleOrg.js'
 import CreateVolunteer from './components/Admin/AdminCreateVolunteer.js'
 import AdminAllVolunteers from './components/Admin/AdminAllVolunteers.js'
+import AdminSingleVolunteer from './components/Admin/AdminSingleVolunteer.js'
   //USERS
 import AllProjects from './components/Project/AllProjects.js'
 import SingleProject from './components/Project/SingleProject.js'
@@ -49,6 +50,7 @@ class App extends Component {
             <Route exact path="/admin/org/:organizationId" component={AdminSingleOrganization}/>
             <Route exact path="/admin/volunteer" component={CreateVolunteer}/>
             <Route exact path="/admin/Volunteers" component={AdminAllVolunteers}/>
+            <Route exact path="/admin/volunteers/:volunteerId" component={AdminSingleVolunteer}/>
 
 
 

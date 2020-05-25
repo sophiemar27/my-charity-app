@@ -52,10 +52,10 @@ export default class CreateVolunteer extends Component {
             console.log(error)
         }
         const newState = {...this.state}
-        newState.newVolunteer.image = ''
         newState.newVolunteer.name = ''
-        newState.newVolunteer.location = ''
-        newState.newVolunteer.description = ''
+        newState.newVolunteer.projectName = ''
+        newState.newVolunteer.phoneNumber = ''
+        newState.newVolunteer.emailAddress = ''
         this.setState(newState)
     }
 

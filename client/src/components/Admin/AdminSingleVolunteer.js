@@ -36,9 +36,9 @@ export default class AdminSingleVolunteer extends Component {
                 <div>
                     <h1>Admin Single Volunteer Page</h1>
                     <div>Name: {this.state.name}</div>
-                    <div>Project Name{this.state.projectName}</div>
-                    <div>Phone Number{this.state.phoneNumber}</div>
-                    <div>Email{this.state.emailAddress}</div>
+                    <div>Project Name: {this.state.projectName}</div>
+                    <div>Phone Number: {this.state.phoneNumber}</div>
+                    <div>Email: {this.state.emailAddress}</div>
                     <button onClick={() => this.onDeleteVolunteer(volunteerId)}>Delete</button> 
                 </div>
             </div>

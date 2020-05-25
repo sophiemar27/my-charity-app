@@ -44,12 +44,12 @@ export default class AdminAllVolunteers extends Component {
                 {this.state.AllVolunteers.map((volunteers, index) => {
                     return (
                         <div key={`jd320kd-${index}`}>
-                            <div> {volunteers.name}</div>
-                            <Link to={`/admin/org/${volunteers._id}`}>
-                            <div>{volunteers.projectName}</div>
+                            <div> Name: {volunteers.name}</div>
+                            <Link to={`/admin/volunteers/${volunteers._id}`}>
+                            <div>Project Name: {volunteers.projectName}</div>
                             </Link>
-                            <div>{volunteers.phoneNumber}</div>
-                            <div>{volunteers.emailAddress}</div>
+                            <div>Phoe Number: {volunteers.phoneNumber}</div>
+                            <div>Email: {volunteers.emailAddress}</div>
                             <button onClick={() => this.onDeleteVolunteer(volunteers._id)}>Delete</button> 
                             
                             <button>Edit</button>
