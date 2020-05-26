@@ -9,16 +9,16 @@
 * User can see a succussfully submited message.
 
 # ERD 
-![ERD Image](public/charity_erd.png)
+![ERD Image](/public/charity_erd.png)
 
 # Wireframe
-*![Wireframe Image](public/charity_wf.png)
-*![Wireframe Image](public/charity_wf-2.png)
-*![Wireframe Image](public/charity_wf-3.png)
-*![Wireframe Image](public/charity_wf-4.png)
+*![Wireframe Image](/public/charity_wf.png)
+*![Wireframe Image](/public/charity_wf-2.png)
+*![Wireframe Image](/public/charity_wf-3.png)
+*![Wireframe Image](/public/charity_wf-4.png)
 
-# Project Board
-click [here](https://github.com/sophiemar27/my-charity-app/projects/1) to see project board.
+# Project Planning Board
+click [here](https://github.com/sophiemar27/my-charity-app/projects/1) to see project planning board.
 
 
   
