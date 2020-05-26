@@ -35,10 +35,14 @@ class App extends Component {
       {/* <img className='banner' src={'https://f0.pngfuel.com/png/346/468/volunteering-international-volunteer-day-labor-organization-person-others-png-clip-art.png'}/> */}
       <Router>
 
-      <nav>
+      <nav className="nav-bar">
+          <Link to="/">
           <i className="material-icons logo">
-            Hope
+          Hope
           </i>
+          </Link>
+            
+          
           <Link to="/home">
             <div className="link-item">Home</div>
           </Link>
@@ -53,7 +57,7 @@ class App extends Component {
           </Link>
         </nav>
         
-        <div>
+        <div className='app-all-project'>
           <Switch>
 
             {/* USERS */}

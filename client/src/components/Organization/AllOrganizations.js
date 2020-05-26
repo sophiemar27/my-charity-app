@@ -41,7 +41,7 @@ export default class AllOrganizations extends Component {
     render() {
         return (
             <div class='all-organizations'>
-                <h1>All Organizations</h1>
+                <h1 className='title'>All Organizations</h1>
                 {this.state.AllOrganizations.map((organizations, index) => {
                     return (
                         <div key={`jd320kd-${index}`}>
@@ -53,7 +53,7 @@ export default class AllOrganizations extends Component {
                             <div>{organizations.emailAddress}</div>
                             <button onClick={() => this.onDeleteOrganization(organizations._id)}>Delete</button> 
                             
-                            <button>Edit</button>
+                            
 
                             
                         </div>

@@ -35,7 +35,8 @@ nav i.logo {
 
 img {
   width: 200px;
-  height: 250px;
+  height: 230px;
+  box-shadow: 10px 10px 5px #ccc;
   
 }
 img:hover {
@@ -48,7 +49,18 @@ img:hover {
   justify-content: space-evenly;
   flex-wrap: wrap ;
   margin-top: 30px;
-  width: 600px;
+  width: 900px;
+  margin: 10px;
+}
+
+.app-all-project {
+  display: flex;
+  justify-content: center;
+}
+
+.volunteer-form {
+  display: flex;
+  justify-content: center;
 }
 
 .single-project {
@@ -58,7 +70,7 @@ img:hover {
 }
 
 .single-img {
-  height: 400px;
+  height: 350px;
   width: 350px;
 }
 
@@ -73,4 +85,23 @@ img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input {
+  margin: 15px;
+  padding: 10px 25px;
+  font-size: 18px;
+  
+}
+
+input .input{
+  color: red;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.title {
+  color: coral;
 }

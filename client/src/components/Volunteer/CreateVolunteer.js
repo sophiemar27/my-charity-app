@@ -69,7 +69,7 @@ export default class CreateVolunteer extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div>
                         <label htmlFor="name"></label>
-                        <input
+                        <input className='input'
                             placeholder="Full Name"
                             type="text"
                             name="name"
@@ -80,7 +80,7 @@ export default class CreateVolunteer extends Component {
 
                     <div>
                         <label htmlFor="projectName"></label>
-                        <input
+                        <input className='input'
                             placeholder="Project Name"
                             type="text"
                             name="projectName"
@@ -91,7 +91,7 @@ export default class CreateVolunteer extends Component {
 
                     <div>
                         <label htmlFor="phoneNumber"></label>
-                        <input
+                        <input className='input'
                             placeholder="Phone Number"
                             type="text"
                             name="phoneNumber"
@@ -102,7 +102,7 @@ export default class CreateVolunteer extends Component {
 
                     <div>
                         <label htmlFor="emailAddress"></label>
-                        <input
+                        <input className='input'
                             placeholder="Email Address"
                             type="text"
                             name="emailAddress"
@@ -110,9 +110,9 @@ export default class CreateVolunteer extends Component {
                             onChange={this.onChangeVolunteer}
                         />
                     </div>
-                    <Link to={`/Confirmation`}>
-                        <input type="submit" value="Add Volunteer"/>
-                    </Link>
+                    
+                        <input className='input' type="submit" value="Add"/>
+                    
                     
                 </form>
               

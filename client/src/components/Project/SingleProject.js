@@ -25,9 +25,9 @@ export default class SingleProject extends Component {
     render() {
         
         return (
-            <div className='volunteer-form'>
+            <div className='single-project'>
                 <div>
-                    <h1>Single Page</h1>
+                    <h1></h1>
                     <div><img class='single-img' src={this.state.image}/></div>
                     
                     <div>{this.state.name}</div>

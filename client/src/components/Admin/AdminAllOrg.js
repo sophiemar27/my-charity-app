@@ -52,7 +52,7 @@ export default class AdminAllOrganizations extends Component {
                             <div>{organizations.emailAddress}</div>
                             <button onClick={() => this.onDeleteOrganization(organizations._id)}>Delete</button> 
                             
-                            <button>Edit</button>
+                           
 
                             
                         </div>
