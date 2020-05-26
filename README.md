@@ -6,5 +6,8 @@
 * User can select a project and get detail information about the project and the organization that is responsible to that specific project.
 * User can commjnicate the organization if the volunteer has more question
 * User can click on 'register' to sign up for a project
-* User can see a succussfully submited message
+* User can see a succussfully submited message.
+
+# ERD 
+![ERD Image](./public/charity_erd.png)
   
