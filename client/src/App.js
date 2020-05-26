@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { 
   BrowserRouter as Router, 
   Switch, 
-  Route } 
+  Route,
+  Link } 
   from 'react-router-dom'
   //ADMIN
 import CreateProject from './components/Admin/CreateProject.js'
@@ -20,6 +21,7 @@ import SingleProject from './components/Project/SingleProject.js'
 import AllOrganizations from './components/Organization/AllOrganizations.js'
 import SingleOrganization from './components/Organization/SingleOrg.js'
 import CreateVolunteer from './components/Volunteer/CreateVolunteer.js'
+import Confirmation from './components/Volunteer/Confirmation.js'
 
 
 
@@ -29,9 +31,28 @@ import './App.css';
 class App extends Component {
   render () {
     return (
-      <div>
-      <img className='banner' src={'https://f0.pngfuel.com/png/346/468/volunteering-international-volunteer-day-labor-organization-person-others-png-clip-art.png'}/>
+      <div className="nav-bar">
+      {/* <img className='banner' src={'https://f0.pngfuel.com/png/346/468/volunteering-international-volunteer-day-labor-organization-person-others-png-clip-art.png'}/> */}
       <Router>
+
+      <nav>
+          <i className="material-icons logo">
+            Hope
+          </i>
+          <Link to="/home">
+            <div className="link-item">Home</div>
+          </Link>
+          <Link to="/">
+            <div className="link-item">Projects</div>
+          </Link>
+          <Link to="/all_orgs">
+            <div className="link-item">Organizations</div>
+          </Link>
+          <Link to="/about">
+            {/* <div className="link-item">About Us</div> */}
+          </Link>
+        </nav>
+        
         <div>
           <Switch>
 
@@ -41,6 +62,7 @@ class App extends Component {
             <Route exact path="/all_orgs" component={AllOrganizations}/>
             <Route exact path="/organizations/:organizationId" component={SingleOrganization}/>
             <Route exact path="/create_volunteer" component={CreateVolunteer}/>
+            <Route exact path="/Confirmation/:volunteerId" component={Confirmation}/>
            
             
             {/* ADMI */}

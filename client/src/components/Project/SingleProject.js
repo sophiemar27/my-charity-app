@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default class SingleProject extends Component {
@@ -24,7 +25,7 @@ export default class SingleProject extends Component {
     render() {
         
         return (
-            <div class='single-project'>
+            <div className='volunteer-form'>
                 <div>
                     <h1>Single Page</h1>
                     <div><img class='single-img' src={this.state.image}/></div>
@@ -32,7 +33,13 @@ export default class SingleProject extends Component {
                     <div>{this.state.name}</div>
                     <div>{this.state.location}</div>
                     <div>{this.state.description}</div>
+                    
+                <Link to={`/create_volunteer`}>
+                    <div><button>Register</button></div>
+                </Link>
+                
                 </div>
+                
             </div>
         )
       

@@ -1,3 +1,38 @@
+
+.nav-bar nav {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: coral;
+  background: #484848;
+  user-select: none;
+  padding: 0 40px;
+  border-bottom: 5px solid coral;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none !important;
+}
+
+nav div.link-item {
+  margin: 0 20px 0 20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+nav i.logo {
+  font-size: 55px;
+  left: 40px;
+  position: absolute;
+  color: coral;
+}
+
+
+
 img {
   width: 200px;
   height: 250px;
@@ -12,7 +47,8 @@ img:hover {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap ;
-  
+  margin-top: 30px;
+  width: 600px;
 }
 
 .single-project {
@@ -31,4 +67,10 @@ img:hover {
   background-repeat: no-repeat;
   margin-bottom: 20px;
   background-color: #ffffff;
+}
+
+.volunteer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

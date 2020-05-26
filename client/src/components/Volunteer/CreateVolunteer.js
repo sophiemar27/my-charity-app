@@ -64,12 +64,13 @@ export default class CreateVolunteer extends Component {
     render() {
         return (
             <div>
-                <h1>Create volunteers(users)</h1>
+                <h1></h1>
 
                 <form onSubmit={this.onSubmit}>
                     <div>
-                        <label htmlFor="name">Name</label>
+                        <label htmlFor="name"></label>
                         <input
+                            placeholder="Full Name"
                             type="text"
                             name="name"
                             value={this.state.newVolunteer.name}
@@ -78,8 +79,9 @@ export default class CreateVolunteer extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="projectName">Project Name</label>
+                        <label htmlFor="projectName"></label>
                         <input
+                            placeholder="Project Name"
                             type="text"
                             name="projectName"
                             value={this.state.newVolunteer.projectName}
@@ -88,8 +90,9 @@ export default class CreateVolunteer extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="phoneNumber">Phone Number</label>
+                        <label htmlFor="phoneNumber"></label>
                         <input
+                            placeholder="Phone Number"
                             type="text"
                             name="phoneNumber"
                             value={this.state.newVolunteer.phoneNumber}
@@ -98,15 +101,19 @@ export default class CreateVolunteer extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="emailAddress">Email</label>
+                        <label htmlFor="emailAddress"></label>
                         <input
+                            placeholder="Email Address"
                             type="text"
                             name="emailAddress"
                             value={this.state.newVolunteer.emailAddress}
                             onChange={this.onChangeVolunteer}
                         />
                     </div>
-                    <input type="submit" value="Add Volunteer" />
+                    <Link to={`/Confirmation`}>
+                        <input type="submit" value="Add Volunteer"/>
+                    </Link>
+                    
                 </form>
               
             </div>

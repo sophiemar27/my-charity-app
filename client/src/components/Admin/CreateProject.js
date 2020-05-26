@@ -50,6 +50,7 @@ export default class CreateProject extends Component {
             console.log('Failed to create project')
             console.log(error)
         }
+        
         const newState = {...this.state}
         newState.newProject.image = ''
         newState.newProject.name = ''

@@ -9,16 +9,16 @@
 * User can see a succussfully submited message.
 
 # ERD 
-![ERD Image](/public/charity_erd.png)
+![ERD Image](client/public/charity_erd.png)
 
 # Wireframe
-![Wireframe Image](/public/charity_wf.png)
+![Wireframe Image](client/public/charity_wf.png)
 ---
-![Wireframe Image](/public/charity_wf-2.png)
+![Wireframe Image](client/public/charity_wf-2.png)
 ---
-![Wireframe Image](/public/charity_wf-3.png)
+![Wireframe Image](client/public/charity_wf-3.png)
 ---
-![Wireframe Image](/public/charity_wf-4.png)
+![Wireframe Image](./client/public/charity_wf-4.png)
 
 
 # Project Planning Board
