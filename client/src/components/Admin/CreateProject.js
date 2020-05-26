@@ -17,17 +17,7 @@ export default class CreateProject extends Component {
         //this.getAllProjects()
     }
  
-    // getAllProjects = async () => {
-    //     try {
-    //         const res = await axios.get('/api/projects')
-    //         const newState = { ...this.state }
-    //         newState.newProject = res.data
-    //         this.setState(newState)
-    //     } catch (error) {
-    //         console.log('failed')
-    //         console.log(error)
-    //     }
-    // }
+    
 
     onDeleteProject = async (projectId) => {
         await axios.delete(`/api/projects/${projectId}`)
