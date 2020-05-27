@@ -34,7 +34,7 @@ export default class CreateProject extends Component {
         evt.preventDefault()
         try {
             await axios.post('/api/projects', this.state.newProject)
-            // this.getAllBooks()
+           
              console.log(this.state.newProject)
         } catch (error) {
             console.log('Failed to create project')
