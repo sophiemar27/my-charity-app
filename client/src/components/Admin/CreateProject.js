@@ -58,8 +58,9 @@ export default class CreateProject extends Component {
 
                 <form onSubmit={this.onSubmit}>
                     <div>
-                        <label htmlFor="image">Image</label>
+                        <label htmlFor="image"></label>
                         <input
+                            placeholder="ImageURL"
                             type="text"
                             name="image"
                             value={this.state.newProject.image}
@@ -68,8 +69,9 @@ export default class CreateProject extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="name">Name</label>
+                        <label htmlFor="name"></label>
                         <input
+                            placeholder="Full Name"
                             type="text"
                             name="name"
                             value={this.state.newProject.name}
@@ -78,8 +80,9 @@ export default class CreateProject extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="location">Location</label>
+                        <label htmlFor="location"></label>
                         <input
+                            placeholder="Location"
                             type="text"
                             name="location"
                             value={this.state.newProject.location}
@@ -88,8 +91,9 @@ export default class CreateProject extends Component {
                     </div>
 
                     <div>
-                        <label htmlFor="description">Description</label>
+                        <label htmlFor="description"></label>
                         <input
+                            placeholder="Description"
                             type="text"
                             name="description"
                             value={this.state.newProject.description}
