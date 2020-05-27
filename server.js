@@ -8,7 +8,7 @@ const app = express()
 const PORT = process.env.PORT || 3001
 
 app.use(express.json())
-app.use(express.static(`${__dirname}client/build`))
+app.use(express.static(`${__dirname}/client/build`))
 
 app.use('/api/projects', projectRouter)
 app.use('/api/organizations', organizationRouter)
